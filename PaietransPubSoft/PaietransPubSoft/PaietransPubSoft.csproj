@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C7CC7F3-C248-40EC-8A55-B77832E79D34}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PaietransPubSoft</RootNamespace>
+    <AssemblyName>PaietransPubSoft</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ALLProjetctdll">
+      <HintPath>..\..\ALLPROJDLL2\ALLProjetctdll\ALLProjetctdll\bin\Debug\ALLProjetctdll.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\ProjetCADECO\GestionPaiementsBudjet\GestionPaiementsBudjet\bin\Debug\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\ProjetCADECO\GestionPaiementsBudjet\GestionPaiementsBudjet\bin\Debug\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\ProjetCADECO\GestionPaiementsBudjet\GestionPaiementsBudjet\bin\Debug\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\ProjetCADECO\GestionPaiementsBudjet\GestionPaiementsBudjet\bin\Debug\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\ProjetCADECO\GestionPaiementsBudjet\GestionPaiementsBudjet\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\..\Backup8\MBC_Soft\MBC_Soft\bin\Debug\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Tulpep.NotificationWindow">
+      <HintPath>..\..\ProjetCADECO\GestionPaiementsBudjet\GestionPaiementsBudjet\bin\Debug\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\clsGetInfoPersonne.cs" />
+    <Compile Include="Classes\clsImabar.cs" />
+    <Compile Include="Classes\Constantes.cs" />
+    <Compile Include="DataSets\DTSClient.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DTSClient.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\fmr_AddProprietaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\fmr_AddProprietaire.Designer.cs">
+      <DependentUpon>fmr_AddProprietaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frmPrincipale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frmPrincipale.Designer.cs">
+      <DependentUpon>frmPrincipale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddAffectationChauffeur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddAffectationChauffeur.Designer.cs">
+      <DependentUpon>frm_AddAffectationChauffeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddAgent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddAgent.Designer.cs">
+      <DependentUpon>frm_AddAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddChargeCompteClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddChargeCompteClient.Designer.cs">
+      <DependentUpon>frm_AddChargeCompteClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddChauffeur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddChauffeur.Designer.cs">
+      <DependentUpon>frm_AddChauffeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddEngin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddEngin.Designer.cs">
+      <DependentUpon>frm_AddEngin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddPaiement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddPaiement.Designer.cs">
+      <DependentUpon>frm_AddPaiement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddPasser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddPasser.Designer.cs">
+      <DependentUpon>frm_AddPasser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddRetraitBus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddRetraitBus.Designer.cs">
+      <DependentUpon>frm_AddRetraitBus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddVirement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frm_AddVirement.Designer.cs">
+      <DependentUpon>frm_AddVirement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\frm_SearchPersonne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\frm_SearchPersonne.Designer.cs">
+      <DependentUpon>frm_SearchPersonne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulaires\WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rapports\rpt_Carteclient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapports\rpt_Carteclient.Designer.cs">
+      <DependentUpon>rpt_Carteclient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\rpt_ChargementCompte.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapports\rpt_ChargementCompte.Designer.cs">
+      <DependentUpon>rpt_ChargementCompte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\rpt_HistoriqueAffect.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapports\rpt_HistoriqueAffect.Designer.cs">
+      <DependentUpon>rpt_HistoriqueAffect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\rpt_ListeAffectation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapports\rpt_ListeAffectation.Designer.cs">
+      <DependentUpon>rpt_ListeAffectation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\rpt_ListeChauffeur.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapports\rpt_ListeChauffeur.Designer.cs">
+      <DependentUpon>rpt_ListeChauffeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\rpt_ListeClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapports\rpt_ListeClient.Designer.cs">
+      <DependentUpon>rpt_ListeClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\rpt_ListeEngin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapports\rpt_ListeEngin.Designer.cs">
+      <DependentUpon>rpt_ListeEngin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\rpt_ListeProprietaire.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapports\rpt_ListeProprietaire.Designer.cs">
+      <DependentUpon>rpt_ListeProprietaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\rpt_RapportPaiement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapports\rpt_RapportPaiement.Designer.cs">
+      <DependentUpon>rpt_RapportPaiement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\rpt_RapportRetrait.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapports\rpt_RapportRetrait.Designer.cs">
+      <DependentUpon>rpt_RapportRetrait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapports\rpt_RapportVirement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rapports\rpt_RapportVirement.Designer.cs">
+      <DependentUpon>rpt_RapportVirement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uControl\ucAgent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uControl\ucAgent.Designer.cs">
+      <DependentUpon>ucAgent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uControl\ucAlerte.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uControl\ucAlerte.Designer.cs">
+      <DependentUpon>ucAlerte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uControl\ucChauffeur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uControl\ucChauffeur.Designer.cs">
+      <DependentUpon>ucChauffeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uControl\ucEntreprise.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uControl\ucEntreprise.Designer.cs">
+      <DependentUpon>ucEntreprise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uControl\ucFonctionnement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uControl\ucFonctionnement.Designer.cs">
+      <DependentUpon>ucFonctionnement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uControl\ucHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uControl\ucHome.Designer.cs">
+      <DependentUpon>ucHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uControl\ucParametrePrix.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uControl\ucParametrePrix.Designer.cs">
+      <DependentUpon>ucParametrePrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uControl\ucPassager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uControl\ucPassager.Designer.cs">
+      <DependentUpon>ucPassager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uControl\ucProprietaire.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uControl\ucProprietaire.Designer.cs">
+      <DependentUpon>ucProprietaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uControl\ucRapport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uControl\ucRapport.Designer.cs">
+      <DependentUpon>ucRapport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uControl\ucUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uControl\ucUser.Designer.cs">
+      <DependentUpon>ucUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uControl\uc_Configuration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="uControl\uc_Configuration.Designer.cs">
+      <DependentUpon>uc_Configuration.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Formulaires\fmr_AddProprietaire.resx">
+      <DependentUpon>fmr_AddProprietaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frmPrincipale.resx">
+      <DependentUpon>frmPrincipale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frm_AddAffectationChauffeur.resx">
+      <DependentUpon>frm_AddAffectationChauffeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frm_AddAgent.resx">
+      <DependentUpon>frm_AddAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frm_AddChargeCompteClient.resx">
+      <DependentUpon>frm_AddChargeCompteClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frm_AddChauffeur.resx">
+      <DependentUpon>frm_AddChauffeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frm_AddEngin.resx">
+      <DependentUpon>frm_AddEngin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frm_AddPaiement.resx">
+      <DependentUpon>frm_AddPaiement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frm_AddPasser.resx">
+      <DependentUpon>frm_AddPasser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frm_AddRetraitBus.resx">
+      <DependentUpon>frm_AddRetraitBus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frm_AddVirement.resx">
+      <DependentUpon>frm_AddVirement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\frm_SearchPersonne.resx">
+      <DependentUpon>frm_SearchPersonne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rapports\rpt_Carteclient.resx">
+      <DependentUpon>rpt_Carteclient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\rpt_ChargementCompte.resx">
+      <DependentUpon>rpt_ChargementCompte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\rpt_HistoriqueAffect.resx">
+      <DependentUpon>rpt_HistoriqueAffect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\rpt_ListeAffectation.resx">
+      <DependentUpon>rpt_ListeAffectation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\rpt_ListeChauffeur.resx">
+      <DependentUpon>rpt_ListeChauffeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\rpt_ListeClient.resx">
+      <DependentUpon>rpt_ListeClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\rpt_ListeEngin.resx">
+      <DependentUpon>rpt_ListeEngin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\rpt_ListeProprietaire.resx">
+      <DependentUpon>rpt_ListeProprietaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\rpt_RapportPaiement.resx">
+      <DependentUpon>rpt_RapportPaiement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\rpt_RapportRetrait.resx">
+      <DependentUpon>rpt_RapportRetrait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapports\rpt_RapportVirement.resx">
+      <DependentUpon>rpt_RapportVirement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uControl\ucAgent.resx">
+      <DependentUpon>ucAgent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uControl\ucAlerte.resx">
+      <DependentUpon>ucAlerte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uControl\ucChauffeur.resx">
+      <DependentUpon>ucChauffeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uControl\ucEntreprise.resx">
+      <DependentUpon>ucEntreprise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uControl\ucFonctionnement.resx">
+      <DependentUpon>ucFonctionnement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uControl\ucParametrePrix.resx">
+      <DependentUpon>ucParametrePrix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uControl\ucPassager.resx">
+      <DependentUpon>ucPassager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uControl\ucProprietaire.resx">
+      <DependentUpon>ucProprietaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uControl\ucRapport.resx">
+      <DependentUpon>ucRapport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uControl\ucUser.resx">
+      <DependentUpon>ucUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uControl\uc_Configuration.resx">
+      <DependentUpon>uc_Configuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSets\DTSClient.xsc">
+      <DependentUpon>DTSClient.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DTSClient.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DTSClient.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\DTSClient.xss">
+      <DependentUpon>DTSClient.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Ressources\add_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\cancel_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\checked_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\connection_sync_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\print_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ressources\visible_30px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
