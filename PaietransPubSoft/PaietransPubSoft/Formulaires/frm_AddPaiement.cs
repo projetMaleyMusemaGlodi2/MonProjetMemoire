@@ -168,11 +168,41 @@ namespace PaietransPubSoft.Formulaires
             }
         }
 
+        bool testeCompteClient(string IdClientTeste, string montant)
+        {
+            bool teste = false;
+            bool valueTeste=ALLProjetctdll.Classes.clsGlossiaireMYSQL.GetInstance().teste_QuantiteSotock("id", "Compte", "tClient", IdClientTeste.ToString(), montant);
+            if (valueTeste == true)
+            {
+                teste = true;
+            }
+            else
+            {
+                teste = false;
+            }
+            
+            return teste;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                Save(0);
+                if (String.IsNullOrEmpty(IDClient.ToString()) || String.IsNullOrEmpty(txtmontant.Text))
+                {
+                    MessageBox.Show("Il y a des champs Requis", "INFOS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    if (testeCompteClient(IDClient.ToString(), txtmontant.Text) == true)
+                    {
+                        Save(0);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ce Compte est insuffisant pour faire cette course svp !!!", "Compte Insuffisant", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+                    }
+                }
+                
             }
             catch (Exception ex)
             {

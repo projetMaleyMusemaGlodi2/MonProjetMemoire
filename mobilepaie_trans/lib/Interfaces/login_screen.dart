@@ -11,7 +11,6 @@ import 'package:mobilepaie_trans/Interfaces/compteClient.dart';
 import 'package:mobilepaie_trans/Interfaces/home_secreenProprietaire.dart';
 //import 'package:mobilepaie_trans/Interfaces/home_screen.dart';
 import 'package:mobilepaie_trans/Interfaces/nomEnginsChauffeur.dart';
-import 'package:mobilepaie_trans/Interfaces/nosEngins.dart';
 import 'package:mobilepaie_trans/Interfaces/otp_login.dart';
 import 'package:mobilepaie_trans/Interfaces/signup_screen.dart';
 
@@ -220,7 +219,7 @@ Future<List> _loginChauffeur() async {
         PubCon.userContact = datauser[0]['contact'];
         PubCon.userMail = datauser[0]['mail'];
         PubCon.userTypepieceid = datauser[0]['typepieceid'];
-        PubCon.userNumeropieceid = datauser[0]['numeropieceid'];  
+        PubCon.userNumeropieceid = datauser[0]['numeropieceid']; 
 
         PubCon.userSexe = datauser[0]['sexe']; 
         PubCon.userDatenaissance = datauser[0]['datenaissance']; 
@@ -229,7 +228,7 @@ Future<List> _loginChauffeur() async {
         PubCon.userNiveauetude = datauser[0]['niveauetude'];  
         PubCon.userFonction = datauser[0]['fonction'];  
 
-        PubCon.userImage = datauser[0]['image'];        
+        //PubCon.userImage = datauser[0]['image'];        
         PubCon.username = datauser[0]['username'];
         PubCon.password = datauser[0]['password'];
         PubCon.userSession = datauser[0]['usersession'];        

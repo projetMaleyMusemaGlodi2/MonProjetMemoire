@@ -199,7 +199,7 @@ namespace PaietransPubSoft.uControl
             {
                 string idProprietaire = ALLProjetctdll.Classes.clsGlossiaireMYSQL.GetInstance().GetID("id", "tproprietaire", "noms", txtProprietaire.Text);
                 rpt_RapportVirement rpt = new rpt_RapportVirement();
-                rpt.DataSource = ALLProjetctdll.Classes.clsGlossiaireMYSQL.GetInstance().get_Report_Trier("vrapportvirementcompte", "datevirement", DateTime.Parse(txtdate1.Text), DateTime.Parse(txtdate2.Text), "refProprietaire", idProprietaire);
+                rpt.DataSource = ALLProjetctdll.Classes.clsGlossiaireMYSQL.GetInstance().get_Report_Trier("vrapportvirementcompte", "datevirement", DateTime.Parse(txtdate1.Text), DateTime.Parse(txtdate2.Text), "refProprietaireRecep", idProprietaire);
                 using (ReportPrintTool printTool = new ReportPrintTool(rpt))
                 {
                     printTool.ShowPreviewDialog();
@@ -324,6 +324,7 @@ namespace PaietransPubSoft.uControl
                 txtProprietaire.Items.Clear();
                 txtPassager.Items.Clear();
                 ALLProjetctdll.Classes.clsGlossiaireMYSQL.GetInstance().chargeCombo(txtProprietaire, "noms", "tproprietaire");
+                ALLProjetctdll.Classes.clsGlossiaireMYSQL.GetInstance().chargeCombo(txtPassager, "noms", "tclient");
                 ALLProjetctdll.Classes.clsGlossiaireMYSQL.GetInstance().chargeCombo(txtPassager, "noms", "tAnnee");
             }
             catch

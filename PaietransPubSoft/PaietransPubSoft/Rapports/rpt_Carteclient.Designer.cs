@@ -325,7 +325,7 @@
             // 
             // sqlDataSource1
             // 
-            this.sqlDataSource1.ConnectionName = "localhost_transpie_db_Connection";
+            this.sqlDataSource1.ConnectionName = "localhost_transpie_db_Connection 12";
             this.sqlDataSource1.Name = "sqlDataSource1";
             tableQuery1.Name = "vrapportclient";
             tableInfo1.Name = "vrapportclient";

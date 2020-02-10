@@ -35,7 +35,7 @@
             this.btnDeconnexion = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRapport = new System.Windows.Forms.Button();
             this.btnAlerte = new System.Windows.Forms.Button();
             this.btnPersonnel = new System.Windows.Forms.Button();
             this.btnParametre = new System.Windows.Forms.Button();
@@ -120,7 +120,7 @@
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(34)))), ((int)(((byte)(44)))));
             this.panelMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMenu.Controls.Add(this.button1);
+            this.panelMenu.Controls.Add(this.btnRapport);
             this.panelMenu.Controls.Add(this.btnAlerte);
             this.panelMenu.Controls.Add(this.btnPersonnel);
             this.panelMenu.Controls.Add(this.btnParametre);
@@ -135,23 +135,23 @@
             this.panelMenu.Size = new System.Drawing.Size(168, 653);
             this.panelMenu.TabIndex = 3;
             // 
-            // button1
+            // btnRapport
             // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(14, 437);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 55);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "     Rapports";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnRapport.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.btnRapport.FlatAppearance.BorderSize = 0;
+            this.btnRapport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRapport.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRapport.ForeColor = System.Drawing.Color.Transparent;
+            this.btnRapport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRapport.Location = new System.Drawing.Point(14, 437);
+            this.btnRapport.Name = "btnRapport";
+            this.btnRapport.Size = new System.Drawing.Size(153, 55);
+            this.btnRapport.TabIndex = 20;
+            this.btnRapport.Text = "     Rapports";
+            this.btnRapport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRapport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRapport.UseVisualStyleBackColor = true;
+            this.btnRapport.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btnAlerte
             // 
@@ -331,7 +331,7 @@
         private System.Windows.Forms.Button btnAlerte;
         private System.Windows.Forms.Button btnPersonnel;
         private System.Windows.Forms.Panel PanelPrincipal;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRapport;
         private System.Windows.Forms.Label label1;
     }
 }

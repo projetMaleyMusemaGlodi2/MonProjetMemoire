@@ -94,7 +94,7 @@ namespace PaietransPubSoft
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            switchClic(new ucRapport(spl), btnAlerte);
+            switchClic(new ucRapport(spl), btnRapport);
         }
     }
 }
